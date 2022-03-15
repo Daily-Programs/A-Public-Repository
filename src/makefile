@@ -1,3 +1,4 @@
+cd /autograder/source
 CC = g++
 RM = /bin/rm
 
