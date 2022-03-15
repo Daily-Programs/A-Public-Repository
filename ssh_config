@@ -1,3 +1,3 @@
-Host github.com
-  IdentityFile ~/.ssh/deploy_key
+Host github.com/Daily-Programs/A-Public-Repository
+  IdentityFile ~/.ssh//Daily-Programs/A-Public-Repository-GitHub_key
   IdentitiesOnly yes
