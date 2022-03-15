@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+cd /autograder/source/src
+cp /autograder/submission/primes-stud.cc .
+
+make clean
+make primes-key
+make primes-stud
+cp primes-key key
+cp primes-stud out
+diff key out
+
+#cd /autograder/source
+
+# Copy the student's code into the autograder directory. Make sure
+# student has the right package name in their file and that it's in
+# the right place
+#cp /autograder/submission/BinarySearch.java /autograder/source/src/edu/niu/csci680/BinarySearch.java
+
+# Compile the student's code with autograder code
+#bash  /autograder/source/compile.sh
+
+# Run the autograder code
+#bash  /autograder/source/run.sh > /autograder/results/results.json
