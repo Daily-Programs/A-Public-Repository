@@ -3,11 +3,11 @@ cd /autograder/source/src
 cp /autograder/submission/primes-stud.cc .
 
 make clean
-make primes-key
+make primes-sol
 make primes-stud
-cp primes-key key
+cp primes-sol sol
 cp primes-stud out
-diff key out
+diff sol out
 
 #cd /autograder/source
 
