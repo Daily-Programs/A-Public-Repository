@@ -8,5 +8,3 @@ cp id_rsa /root/.ssh
 #this is the same repo with previously deployed public key. 
 
 git clone https://github.com/Daily-Programs/A-Public-Repository
-
-cd src
