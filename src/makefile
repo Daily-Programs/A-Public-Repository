@@ -4,8 +4,8 @@ RM = /bin/rm
 
 primes-key: force
 	$(CC) -c primes-main.cc
-	$(CC) -c primes-key.cc
-	$(CC) -o primes-key primes-main.o primes-key.o
+	$(CC) -c primes-sol.cc
+	$(CC) -o primes-sol primes-main.o primes-sol.o
 
 
 primes-stud: force
