@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd /autograder/source/src
+cd /autograder/source/A-Public-Repository/src
 cp /autograder/submission/primes-stud.cc .
 
 make clean
