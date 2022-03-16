@@ -1,21 +1,12 @@
 #!/usr/bin/env bash
 
-# Prepare autograder environment
+#this is where your zipped autograder package will go.
+cd /autograder/source
 
-# Install Python dependencies declared in requirements.txt
-#apt-get install -y python python3-pip
-#pip3 install -r /autograder/source/requirements.txt
+#if connecting to GitHub, you need to copy the private key here.
+cp id_rsa /root/.ssh
+#this is the same repo with previously deployed public key. 
 
-# Install valgrind memory tool
-#apt-get install valgrind -y
+git clone https://github.com/Daily-Programs/A-Public-Repository
 
-# Install Catch Framework for C++ testing
-apt-get install catch -y
-
-# Install cppcheck for static code analysis
-#apt-get install cppcheck -y
-
-# Move python uploaded grader files into the same directory as run_autograder
-#cp /autograder/source/grade_util.py /autograder
-#cp /autograder/source/bootstrap.py /autograder
-#cp /autograder/source/config.yml /autograder
+cd src
